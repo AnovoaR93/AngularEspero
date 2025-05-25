@@ -1,0 +1,15 @@
+# Angular build artifacts
+/dist
+/out-tsc
+/node_modules
+
+# Environment files
+/src/environments/*.ts
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
