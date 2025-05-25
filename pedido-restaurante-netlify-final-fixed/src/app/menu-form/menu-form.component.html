@@ -1,0 +1,18 @@
+<form (ngSubmit)="agregarPlato()" class="flex flex-col gap-4 p-4 bg-white rounded-xl shadow max-w-md mx-auto">
+  <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="Nombre del plato"
+         class="border p-2 rounded" required />
+
+  <select [(ngModel)]="tipo" name="tipo" class="border p-2 rounded">
+    <option>Entrante</option>
+    <option>Principal</option>
+    <option>Postre</option>
+    <option>Bebida</option>
+  </select>
+
+  <input type="number" [(ngModel)]="precio" name="precio" placeholder="Precio (€)"
+         class="border p-2 rounded" min="0" required />
+
+  <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+    ➕ Agregar
+  </button>
+</form>

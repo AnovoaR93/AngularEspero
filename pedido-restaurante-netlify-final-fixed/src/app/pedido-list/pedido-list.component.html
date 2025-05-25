@@ -1,0 +1,14 @@
+<div class="p-4">
+  <h2 class="text-xl font-semibold mb-2">🧾 Platos añadidos:</h2>
+  <ul class="space-y-2">
+    <li *ngFor="let plato of platos" class="flex justify-between bg-gray-100 p-3 rounded shadow">
+      <div>
+        <strong>{{ plato.nombre }}</strong> ({{ plato.tipo }}) - {{ plato.precio }} €
+      </div>
+      <button (click)="eliminar.emit(plato.id)"
+              class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+        🗑 Eliminar
+      </button>
+    </li>
+  </ul>
+</div>

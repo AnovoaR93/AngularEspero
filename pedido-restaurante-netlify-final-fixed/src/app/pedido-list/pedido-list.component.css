@@ -1,0 +1,9 @@
+ul {
+  @apply space-y-2;
+}
+li {
+  @apply flex justify-between items-center bg-gray-100 p-3 rounded shadow;
+}
+button {
+  @apply bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600;
+}
